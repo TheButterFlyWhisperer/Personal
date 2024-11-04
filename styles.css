@@ -77,6 +77,7 @@ span{
    align-items: center;
    gap: 7em;
    padding: 30px 12% 0;
+   font-size: 30px;
 }
 
 .home-content {
@@ -102,8 +103,57 @@ span{
     width: 345px;
     display: flex;
     gap: 2em;
+    position: absolute;
+    top: 460px;
+    left: 100px
+    
 }
 
 .btn-1 {
 padding: 15px 28px;
+background-color: black;
+color: white;
+border: 2px solid transparent;
+border-radius: 8px;
+font-size: 18px;
+letter-spacing: 1px;
+font-weight: 600;
+transition: 0.3s ease;
 }
+
+.btn-1:hover {
+    background-color: crimson;
+    color: white;
+   box-shadow: 0 0 25px crimson;
+}
+
+.btn-2 {
+    padding: 15px 28px;
+    background-color: black;
+    color: white;
+    border: 2px solid transparent;
+    border-radius: 8px;
+    font-size: 18px;
+    letter-spacing: 1px;
+    font-weight: 600;
+    transition: 0.3s ease;
+    }
+
+    .btn-2:hover {
+        background-color: crimson;
+        color: white;
+       box-shadow: 0 0 25px crimson;
+    }
+    .img-box img {
+        border-radius: 50%;
+        width: 500px;
+        height: 500px;
+        object-fit: cover;
+        margin-left: 50px;
+    }
+
+    .img-box {
+        position: absolute;
+        top: 120px;
+        right: 100px;
+    }
