@@ -7,6 +7,11 @@
     list-style: none;
 }
 
+body {
+    overflow-x: hidden;
+    background-color: black;
+    
+}
 .header {
     position: fixed;
     top: 0;
@@ -18,6 +23,7 @@
     justify-content: space-between;
     align-items: center;
     z-index: 100;
+   
 }
 
 .logo {
@@ -53,8 +59,8 @@ span{
 
 .contact {
     padding: 10px 28px;
-    background-color: white;
-    color: black;
+    background-color: crimson;
+    color: white;
     border: 2px solid transparent;
     border-radius: 8px;
     font-size: 16px;
@@ -72,12 +78,13 @@ span{
 .home {
    width: 100%;
    min-height: 100vh;
-   background: rgb(241, 241, 241);
+   background: black;
    display: flex;
    align-items: center;
    gap: 7em;
    padding: 30px 12% 0;
    font-size: 30px;
+   color: white;
 }
 
 .home-content {
@@ -102,7 +109,7 @@ span{
 .btn-box {
     width: 345px;
     display: flex;
-    gap: 2em;
+    gap: 1em;
     position: absolute;
     top: 460px;
     left: 100px
@@ -111,7 +118,7 @@ span{
 
 .btn-1 {
 padding: 15px 28px;
-background-color: black;
+background-color: crimson;
 color: white;
 border: 2px solid transparent;
 border-radius: 8px;
@@ -129,7 +136,7 @@ transition: 0.3s ease;
 
 .btn-2 {
     padding: 15px 28px;
-    background-color: black;
+    background-color: crimson;
     color: white;
     border: 2px solid transparent;
     border-radius: 8px;
@@ -157,3 +164,22 @@ transition: 0.3s ease;
         top: 120px;
         right: 100px;
     }
+    
+
+    .btn-3 {
+        padding: 15px 28px;
+        background-color: crimson;
+        color: white;
+        border: 2px solid transparent;
+        border-radius: 8px;
+        font-size: 18px;
+        letter-spacing: 1px;
+        font-weight: 600;
+        transition: 0.3s ease;
+        }
+    
+        .btn-3:hover {
+            background-color: crimson;
+            color: white;
+           box-shadow: 0 0 25px crimson;
+        }
