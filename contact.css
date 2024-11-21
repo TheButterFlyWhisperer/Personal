@@ -1,0 +1,119 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: black;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+}
+
+.container {
+    text-align: center;
+    font-size: 50px;
+    margin-top: 10%;
+}
+
+
+
+.header {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 35px 12%;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+   
+}
+
+.logo {
+    font-size: 25px;
+    color: white;
+    font-weight: 600;
+    transition: 0.5s;
+    text-decoration: none;
+}
+
+.logo:hover {
+    color:crimson;
+    text-shadow: 0 0 25px crimson;
+    transform: scale(1.1);
+}
+
+span{
+    color:crimson;
+}
+
+.navbar a {
+    font-size: 28px;
+    color: white;
+    font-weight: 500;
+    margin-left: 0 20px;
+    transition: 0.3s ease;
+    margin: 20px;
+    border-bottom: 3px solid crimson;
+    text-decoration: none;
+}
+
+.navbar a:hover , 
+.navbar a.active {
+    color:crimson;
+    border-bottom: 3px solid crimson;
+}
+
+.back {
+    padding: 10px 28px;
+    background-color: crimson;
+    color: white;
+    border: 2px solid transparent;
+    border-radius: 8px;
+    font-size: 16px;
+    letter-spacing: 1px;
+    font-weight: 600;
+    transition: 0.3s ease;
+    text-decoration: none;
+}
+
+.back:hover {
+    background-color: crimson;
+    color: white;
+   box-shadow: 0 0 25px crimson;
+}
+
+.home {
+   width: 100%;
+   min-height: 100vh;
+   background: black;
+   display: flex;
+   align-items: center;
+   gap: 7em;
+   padding: 30px 12% 0;
+   font-size: 30px;
+   color: white;
+}
+
+.home-content {
+    max-width: 800px;
+}
+
+.home-content h3 {
+    font-size: 42px;
+}
+
+.home-content h1 {
+    font-size: 62px;
+    line-height: 1.2;
+
+}
+
+.home-content p {
+    font-size: 18px; 
+    margin: 25px 0 30px;
+}
+

@@ -13,7 +13,7 @@ body {
     
 }
 .header {
-    position: fixed;
+    position: relative;
     top: 0;
     left: 0;
     width: 100%;
@@ -27,7 +27,7 @@ body {
 }
 
 .logo {
-    font-size: 25px;
+    font-size: 35px;
     color: white;
     font-weight: 600;
     transition: 0.5s;
@@ -44,17 +44,19 @@ span{
 }
 
 .navbar a {
-    font-size: 18px;
+    font-size: 28px;
     color: white;
     font-weight: 500;
     margin-left: 0 20px;
     transition: 0.3s ease;
+    margin: 20px;
+    border-bottom: 3px solid crimson;
 }
 
 .navbar a:hover , 
 .navbar a.active {
     color:crimson;
-    border-bottom: 3px solid crimson;
+    border-bottom: 3px solid white;
 }
 
 .contact {
@@ -85,34 +87,21 @@ span{
    padding: 30px 12% 0;
    font-size: 30px;
    color: white;
+   margin-top: -10%;
 }
 
-.home-content {
-    max-width: 800px;
-}
-
-.home-content h3 {
-    font-size: 42px;
-}
-
-.home-content h1 {
-    font-size: 62px;
-    line-height: 1.2;
-
-}
-
-.home-content p {
-    font-size: 18px; 
-    margin: 25px 0 30px;
-}
 
 .btn-box {
     width: 345px;
     display: flex;
     gap: 1em;
-    position: absolute;
-    top: 460px;
-    left: 100px
+    position: relative;
+    margin-top: -18%;
+    margin-left: 12%;
+    
+   
+   
+   
     
 }
 
@@ -153,16 +142,18 @@ transition: 0.3s ease;
     }
     .img-box img {
         border-radius: 50%;
-        width: 500px;
-        height: 500px;
+        width: 400px;
+        height: 400px;
         object-fit: cover;
         margin-left: 50px;
     }
 
     .img-box {
-        position: absolute;
-        top: 120px;
-        right: 100px;
+        position:relative;
+        margin-left: 50%;
+        margin-top: -25%;
+      
+       
     }
     
 
@@ -183,3 +174,30 @@ transition: 0.3s ease;
             color: white;
            box-shadow: 0 0 25px crimson;
         }
+
+
+        .row {
+            display: flex;
+            flex-wrap: wrap;
+            padding: 0 4px;
+          }
+        
+          .column {
+            flex: 25%;
+            max-width: 25%;
+            padding: 0 4px;
+          }
+        
+          .column img {
+            margin-top: 8px;
+            vertical-align: middle;
+            width: 100%;
+          }
+        
+          /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+          @media screen and (max-width: 800px) {
+            .column {
+              flex: 50%;
+              max-width: 50%;
+            }
+          }
